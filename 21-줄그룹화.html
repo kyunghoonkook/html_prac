@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>21-줄그룹화</title>
+    <style>
+        table,
+        td,
+        th {
+            border: 1px solid black
+        }
+    </style>
+</head>
+
+<body>
+    <h1>줄 그룹화</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>연도</th>
+                <th>신청 사이트 수</th>
+                <th>인증 사이트 수</th>
+                <th>합격률</th>
+            </tr>
+        </thead>
+
+        <tfoot>
+            <tr>
+                <td>합계</td>
+                <td>1000</td>
+                <td>700</td>
+                <td>70%</td>
+            </tr>
+        </tfoot>
+
+        <!-- tr*4>th+td*3 -->
+        <tr>
+            <th>2011년</th>
+            <td>250</td>
+            <td>125</td>
+            <td>50%</td>
+        </tr>
+        <tr>
+            <th>2012년</th>
+            <td>300</td>
+            <td>100</td>
+            <td>33.3%</td>
+        </tr>
+        <tr>
+            <th>2013년</th>
+            <td>150</td>
+            <td>90</td>
+            <td>60%</td>
+        </tr>
+        <tr>
+            <th>2014년</th>
+            <td>300</td>
+            <td>300</td>
+            <td>100%</td>
+        </tr>
+    </table>
+</body>
+
+</html>

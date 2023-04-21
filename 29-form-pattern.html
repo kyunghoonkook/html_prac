@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>29-form-pattern</title>
+</head>
+<body>
+    <h1>form pattern</h1>
+    <p>입력하는 양식을 지정할 때 사용한다.</p>
+    <p>text, date, search, url, tel, email, password에서 사용한다.</p>
+    <form>
+        <p>이름을 3글자로 제한 영어</p>
+        <label>이름<input type="text" pattern="[A-Za-z]{5}"></label><br>
+
+        <p>패스워드는 8글자 이상</p>
+        <label>패스워드<input type="password" pattern=".{8,}"></label><br>
+
+        <p>이메일형식 문자 @문자.도메인</p>
+        <label>이메일 <input type="email" pattern="[A-Za-z0-9]+@[A-Za-z0-9]+/.[a-z]{2,}$"</label>
+    
+
+        <input type="submit" value="전송">
+
+
+    </form>
+
+
+
+
+
+
+
+</body>
+</html>
